@@ -1,0 +1,10 @@
+CREATE TABLE cars (
+  id SERIAL PRIMARY KEY,
+  name VARCHAR NOT NULL,
+  maker VARCHAR NOT NULL,
+  model VARCHAR NOT NULL,
+  make_year INT NOT NULL,
+  comfort_level INT NOT NULL,
+  created_at TIMESTAMPTZ NOT NULL DEFAULT NOW(),
+  updated_at TIMESTAMPTZ NOT NULL DEFAULT NOW()
+)
